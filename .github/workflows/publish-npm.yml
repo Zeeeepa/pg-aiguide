@@ -3,7 +3,7 @@ name: Publish Package
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 permissions:
   # Required for OIDC authentication to npm (https://docs.npmjs.com/trusted-publishers)
@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-          cache: 'npm'
+          cache: "npm"
 
       - name: Update npm
         run: npm install -g npm@latest
@@ -69,4 +69,6 @@ jobs:
             text: "@tigerdata/pg-aiguide@${{ github.ref_name }} published to npm"
             blocks:
               - type: "markdown"
-                text: "**@tigerdata/pg-aiguide@${{ github.ref_name }} published to npm**\n[View on npm](https://www.npmjs.com/package/@tigerdata/pg-aiguide/v/${{ steps.version.outputs.number }}) • [View Workflow Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+                text: |
+                  **@tigerdata/pg-aiguide@${{ github.ref_name }} published to npm**
+                  [view on npm](https://www.npmjs.com/package/@tigerdata/pg-aiguide/v/${{ steps.version.outputs.number }}) • [view workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})

@@ -5,6 +5,11 @@
   "license": "Apache-2.0",
   "author": "TigerData",
   "homepage": "https://tigerdata.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timescale/pg-aiguide"
+  },
+  "mcpName": "io.github.com.timescale/pg-aiguide",
   "type": "module",
   "bin": {
     "pg-aiguide": "dist/index.js"
@@ -27,9 +32,9 @@
     "migrate": "migrate"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^2.0.68",
-    "@tigerdata/mcp-boilerplate": "^0.7.0",
-    "ai": "^5.0.93",
+    "@ai-sdk/openai": "^2.0.80",
+    "@tigerdata/mcp-boilerplate": "^0.8.0",
+    "ai": "^5.0.108",
     "dotenv": "^17.2.3",
     "gray-matter": "^4.0.3",
     "migrate": "^2.1.0",
@@ -38,13 +43,13 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
-    "@types/node": "^22.19.1",
+    "@types/node": "^22.19.2",
     "@types/pg": "^8.15.6",
     "eslint": "^9.39.1",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.4",
     "shx": "^0.4.0",
-    "tsx": "^4.20.6",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.47.0"
+    "typescript-eslint": "^8.49.0"
   }
 }
